@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+/* Header style */
+
+@media screen and (max-width:760px) {
+    header{
+        display: block;
+    }   
+    header>span>p{
+        text-align: right;
+    }
+    #logo{
+        width: 250px;
+        height: auto;        
+    }
+    header>figure{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:761px) {
+    header{
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    
+    }   
+    #logo{
+        width: 100%;
+        height: auto;
+    }
+}
+
+header{
+    padding: 1rem;
+    background-color: #072227;
+    color: aliceblue;
+}
+
+#logo{
+    border: 1px solid aliceblue;
+    border-radius: 50%;
+}
+
+.head{
+    margin: 1rem;
+}
+
+.head>a{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.8rem; 
+    color: aliceblue;
+    width: 100%;
+}
+header p{
+    font-size: smaller;
+    text-align: justify;
+    padding-bottom: 0;
+}
+
+
+
+/* Navbar style */
+
+nav{
+    background-color: #35858B ;     
+}
+
+@media screen and (min-width:761px) {
+    nav>ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+    }
+    nav>ul>li{
+    padding: 1.5rem;
+    text-align: center;
+    }
+}
+
+@media screen and (max-width:760px) {
+    nav>ul{
+        list-style-type: none;
+        display: block;
+    }
+    nav>ul>li{
+        text-align: center;
+        padding: 0.3rem;
+    }
+}
+
+nav a{
+    color: aliceblue;
+}
+
+nav a:link{
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:rgb(197, 220, 240);
+    text-shadow: 5px 5px 10px #072227 ;
+}
+
+/*main page style - index html*/
+@media screen and (min-width:761px) {
+    .index{
+        display: flex;   
+        flex-wrap: wrap-reverse;       
+    }
+   .aboutgen{
+       order: 1;
+   }
+   #group1, #group2{
+      width: 50%;
+      height: auto;   
+    }
+}
+
+main{
+    background-color:#FFC900 ;
+    color:  #072227;
+}
+
+#group1, #group2{
+    width: 100%;
+    height: auto;
+}
+
+.aboutgen{
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/*footer*/
+
+footer{
+    background-color: #FFF89A;
+    text-align: right;
+    padding: 0.5rem;
+    color: #072227;
+}
+
+
+/*The squad grid style*/
+
+@media screen and (min-width:761px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+    .group{
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width:761px){
+    .group{
+        visibility: hidden;
+    }
+}
+
+div>figure>img{
+    width: 100%;
+    height: auto;
+}
+
+.Mette, .Natasha, .Maiken, .Lykke, .group, .Ebba, .Carolina, .Tascha, .Marie{
+    position: relative;
+    justify-self: center;
+    align-self: center;
+}
+
+.group{
+    font-size: larger;
+    letter-spacing: 0.8rem;
+    text-transform: uppercase;   
+    text-align: center;
+}
+
+/*hover effect images on images*/
+
+#mette2, #nat2, #maiken2, #lykke2, #ebba2, #car2, #tascha2, #marie2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.Mette:hover #mette2, .Natasha:hover #nat2, .Maiken:hover #maiken2, .Lykke:hover #lykke2, .Ebba:hover #ebba2, .Carolina:hover #car2, .Tascha:hover #tascha2, .Marie:hover #marie2{
+    opacity: 1;
+    transition: 0.3s ease-out;
+}
+
+/*text appear on picture click*/
+.hide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    padding-top: 50%;
+    color: aliceblue;
+    text-align: justify;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.hide.show{
+    opacity: 1;
+}
+
+.hover.invisible{
+    visibility: hidden;
+}
+
+/*Projects styling*/
+
+section>h2, section>h3{
+    text-align: center;
+    
+}
+
