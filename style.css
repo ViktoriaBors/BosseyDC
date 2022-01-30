@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Red Hat Display', sans-serif;
+    box-sizing: border-box;
 }
 
 /* Header style */
@@ -168,6 +169,7 @@ footer{
 @media screen and (max-width:761px){
     .group{
         visibility: hidden;
+        height: 0;
     }
 }
 
@@ -310,48 +312,37 @@ article>a{
 
 /*Contact us */
 
-.contact>h2, p{
+.contact{
     text-align: center;
-    padding-bottom:0.8rem;
+    height: 90%;
 }
 
-.HOC{
-    font-weight: 1000;
-    letter-spacing: 0.2rem;
-    text-shadow: 5px 5px 10px #072227;    
+.contact h2{
+    font-weight: 900;
+    padding: 1rem;
+    letter-spacing: 0.3rem;
+}
+.contact p{
+    line-height: 2rem;
+}
+.contact a{    
+    font-weight: 900;
+    text-shadow: 5px 5px 10px #072227;
 }
 
-.contact>img{
-    width: 10%;
+@media screen and (max-width:760px){
+    img{
+        display: block;
+    }
+}
+@media screen and (min-width:761px){
+    .img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+.img img{
+    width: 100%;
     height: auto;
-    text-align: center;
-}
-
-.contact>img, iframe{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-   
-}
-
-.framecontainer{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top:56.26%;
-}
-
-.iframe{ 
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-address{
-    text-align: center;
-    padding-bottom: 0.8rem;
 }
