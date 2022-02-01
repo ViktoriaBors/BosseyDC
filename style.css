@@ -198,9 +198,8 @@ div>figure>img{
 }
 
 @media screen and (max-width:760px){
-    .Mette:active #mette2, .Natasha:active #nat2, .Maiken:active #maiken2, .Lykke:active #lykke2, .Ebba:active #ebba2, .Carolina:active #car2, .Tascha:active #tascha2, .Marie:active #marie2{
+    .Mette:visited #mette2, .Natasha:visited #nat2, .Maiken:visited #maiken2, .Lykke:visited #lykke2, .Ebba:visited #ebba2, .Carolina:visited #car2, .Tascha:visited #tascha2, .Marie:visited #marie2{
         opacity: 1;
-        transition: 0.3s ease-out;
     }
 }
 
