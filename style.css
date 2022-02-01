@@ -190,19 +190,10 @@ div>figure>img{
     opacity: 0;
 }
 
-@media screen and (min-width:761px){
-    .Mette:hover #mette2, .Natasha:hover #nat2, .Maiken:hover #maiken2, .Lykke:hover #lykke2, .Ebba:hover #ebba2, .Carolina:hover #car2, .Tascha:hover #tascha2, .Marie:hover #marie2{
-        opacity: 1;
-        transition: 0.3s ease-out;
-    }
+.Mette:hover #mette2, .Natasha:hover #nat2, .Maiken:hover #maiken2, .Lykke:hover #lykke2, .Ebba:hover #ebba2, .Carolina:hover #car2, .Tascha:hover #tascha2, .Marie:hover #marie2{
+    opacity: 1;
+    transition: 0.3s ease-out;
 }
-
-@media screen and (max-width:760px){
-    .Mette:visited #mette2, .Natasha:visited #nat2, .Maiken:visited #maiken2, .Lykke:visited #lykke2, .Ebba:visited #ebba2, .Carolina:visited #car2, .Tascha:visited #tascha2, .Marie:visited #marie2{
-        opacity: 1;
-    }
-}
-
 
 /*text appear on picture click*/
 .hide{
