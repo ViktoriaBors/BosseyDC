@@ -1,335 +1,327 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Red Hat Display', sans-serif;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+  box-sizing: border-box;
 }
 
 /* Header style */
-
-@media screen and (max-width:760px) {
-     header{
-         padding: 1rem;
-         background-color: #072227;
-         color: aliceblue;
-         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;   
-    }
+header {
+  padding: 1rem;
+  background-color: #072227;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-@media screen and (min-width:761px) {
-    header{
-        padding: 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;    
-    }   
-    #logo{
-        width: 100%;
-        height: auto;
-    }
-}
-
-header{
+@media screen and (min-width: 761px) {
+  header {
     padding: 1rem;
-    background-color: #072227;
-    color: aliceblue;
-}
-
-#logo{
-    border: 1px solid aliceblue;
-    border-radius: 50%;
-}
-
-.head h1{
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.8rem; 
-    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #logo {
     width: 100%;
+    height: auto;
+  }
 }
-header p{
-    font-size: smaller;
-    text-align: center;
-    padding-bottom: 0.3rem;
+
+#logo {
+  border: 1px solid aliceblue;
+  border-radius: 50%;
+}
+
+h1 {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  color: aliceblue;
+  width: 100%;
+}
+
+header p {
+  font-size: smaller;
+  text-align: center;
+  padding-bottom: 0.3rem;
 }
 
 /* Navbar style */
 
-nav{
-    background-color: #35858B ;     
+nav {
+  background-color: #35858b;
+}
+nav > ul {
+  list-style-type: none;
+  display: block;
+}
+nav > ul > li {
+  text-align: center;
+  padding: 0.3rem;
 }
 
-@media screen and (min-width:761px) {
-    nav>ul{
-        list-style-type: none;
-        display: flex;
-        justify-content: space-around;
-    }
-    nav>ul>li{
-        padding: 1.5rem;
-        text-align: center;
-    }
+@media screen and (min-width: 761px) {
+  nav > ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  nav > ul > li {
+    padding: 1.5rem;
+    text-align: center;
+  }
 }
 
-@media screen and (max-width:760px) {
-    nav>ul{
-        list-style-type: none;
-        display: block;
-    }
-    nav>ul>li{
-        text-align: center;
-        padding: 0.3rem;
-    }
+a {
+  color: aliceblue;
 }
 
-a{
-    color: aliceblue;
+a:link {
+  text-decoration: none;
 }
 
-a:link{
-    text-decoration: none;
-}
-
-a:hover{
-    color:rgb(197, 220, 240);
-    text-shadow: 5px 5px 10px #072227 ;
+a:hover {
+  color: rgb(197, 220, 240);
+  text-shadow: 5px 5px 10px #072227;
 }
 
 /*main page style - index html*/
-@media screen and (min-width:761px) {
-    .index{
-        display: flex;   
-        flex-wrap: wrap-reverse;       
-    }
-   .aboutgen{
-       order: 1;
-       flex-grow: 2;
-       text-align: center;
-   }
-   #group1, #group2{
-      width: 100%;
-      height: auto;   
-    }
+main {
+  background-color: #ffc900;
+  color: #072227;
+}
+main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-main{
-    background-color:#FFC900 ;
-    color:  #072227;
+#group1,
+#group2 {
+  width: 100%;
+  height: auto;
 }
 
-#group1, #group2{
-    width: 100%;
-    height: auto;
+.intro {
+  font-size: larger;
+  font-weight: bolder;
+  text-align: center;
 }
 
-.aboutgen{
-    font-size: larger;
-    font-weight: bolder;
-    text-align: center;
+@media screen and (min-width: 761px) {
+  .intro {
+    order: -1;
+  }
 }
 
 /*footer*/
 
-footer{
-    background-color: #FFF89A;
-    text-align: right;
-    padding: 0.5rem;
-    color: #072227;
+footer {
+  background-color: #fff89a;
+  text-align: right;
+  padding: 0.5rem;
+  color: #072227;
 }
-
 
 /*The squad grid style*/
-
-@media screen and (min-width:761px){
-    .grid-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        column-gap: 1rem;
-        row-gap: 1rem;
-    }
-    .group{
-        visibility: visible;
-    }
+.group {
+  visibility: hidden;
+  height: 0;
+  font-size: larger;
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-@media screen and (max-width:760px){
-    .group{
-        visibility: hidden;
-        height: 0;
-    }
+div > figure > img {
+  width: 100%;
+  height: auto;
 }
 
-div>figure>img{
-    width: 100%;
-    height: auto;
-}
-
-.Mette, .Natasha, .Maiken, .Lykke, .group, .Ebba, .Carolina, .Tascha, .Marie{
-    position: relative;
-    justify-self: center;
-    align-self: center;
-}
-
-.group{
-    font-size: larger;
-    letter-spacing: 0.8rem;
-    text-transform: uppercase;   
-    text-align: center;
+.Mette,
+.Natasha,
+.Maiken,
+.Lykke,
+.group,
+.Ebba,
+.Carolina,
+.Tascha,
+.Marie {
+  position: relative;
+  justify-self: center;
+  align-self: center;
 }
 
 /*hover effect images on images*/
 
-#mette2, #nat2, #maiken2, #lykke2, #ebba2, #car2, #tascha2, #marie2{
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-}
-
-.Mette:hover #mette2, .Natasha:hover #nat2, .Maiken:hover #maiken2, .Lykke:hover #lykke2, .Ebba:hover #ebba2, .Carolina:hover #car2, .Tascha:hover #tascha2, .Marie:hover #marie2{
-    opacity: 1;
-    transition: 0.3s ease-out;
+#mette2,
+#nat2,
+#maiken2,
+#lykke2,
+#ebba2,
+#car2,
+#tascha2,
+#marie2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
 
 /*text appear on picture click*/
-.hide{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 1rem;
-    padding-top: 50%;
-    color: aliceblue;
-    text-align: justify;
-    opacity: 0;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
+.hide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  padding-top: 50%;
+  color: aliceblue;
+  text-align: justify;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
 }
 
-.hide.show{
+.hide.show {
+  opacity: 1;
+}
+
+.hover.invisible {
+  visibility: hidden;
+}
+
+@media screen and (min-width: 761px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+  .group {
+    visibility: visible;
+  }
+}
+/*hover effect comes just on laptops*/
+@media screen and (min-width: 992px) {
+  .Mette:hover #mette2,
+  .Natasha:hover #nat2,
+  .Maiken:hover #maiken2,
+  .Lykke:hover #lykke2,
+  .Ebba:hover #ebba2,
+  .Carolina:hover #car2,
+  .Tascha:hover #tascha2,
+  .Marie:hover #marie2 {
     opacity: 1;
-}
-
-.hover.invisible{
-    visibility: hidden;
+    transition: 0.3s ease-out;
+  }
 }
 
 /*Projects styling*/
-.fullcontainer{
-    height: 100vh;
-}
-.pre, a>p{
-    text-align: center;
-    padding-bottom: 1.5rem;
+
+.projects {
+  text-align: center;
+  display: grid;
 }
 
-a>h3{
-    font-size: 2rem;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 1000;
+.ben,
+.hal,
+.mind,
+.mums {
+  margin: 1rem;
+  padding: 5rem 0;
 }
 
-#insta{
-    color: #072227    
+a > h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 1000;
 }
 
-.ben{
-    background: url(images/5.jpg);      
-    background-position: 10% 10%;
-}
-.hal{
-    background: url(images/1.jpg);       
-    background-position: 30% 30%;
-}
-.mind{
-    background: url(images/4.jpg);      
-    background-position: 30% 20%;
-}
-.mums{
-    background: url(images/3.jpg);
-    background-position: 50% 50%;
-}
-.ben, .hal, .mind, .mums{
-    background-size: cover;
-    background-repeat: no-repeat;    
-/*    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text ;*/
-    color: aliceblue;
+#insta {
+  color: #072227;
 }
 
-@media screen and (max-width:760px) {
-    .projects{
-        display: grid;
-    }
-    .ben, .hal, .mind, .mums{ 
-        margin: 1rem;       
-    }
+.ben {
+  background: url(images/5.jpg);
+  background-position: 10% 10%;
+}
+.hal {
+  background: url(images/1.jpg);
+  background-position: 30% 30%;
+}
+.mind {
+  background: url(images/4.jpg);
+  background-position: 30% 20%;
+}
+.mums {
+  background: url(images/3.jpg);
+  background-position: 50% 50%;
+}
+.ben,
+.hal,
+.mind,
+.mums {
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aliceblue;
 }
 
-@media screen and (min-width:761px){
-    .projects{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        column-gap: 1rem;
-        row-gap: 1rem;
-        height: 90%;
-    }
-    .ben{
-        grid-column: 2/ span 2;
-    }
-    .hal{
-        grid-column: 2/span 2;
-        grid-row: 2/ span 1;
-    }
-    .mind{
-        grid-column: 2/ span 2;
-        grid-row: 3/ span 1;
-    }
-    .mums{
-        grid-column: 2/ span 2;
-        grid-row: 4/span 1;
-    }
+@media screen and (min-width: 761px) {
+  .projects {
+    display: grid;
+    grid:
+      ". ben ben ." 1fr ". hal hal ." 1fr ". mind mind ." 1fr
+      ". mums mums ." 1fr/
+      1fr 1fr 1fr 1fr;
+  }
+  .ben {
+    grid-area: ben;
+  }
+  .hal {
+    grid-area: hal;
+  }
+  .mind {
+    grid-area: mind;
+  }
+  .mums {
+    grid-area: mums;
+  }
 }
 
 /*Contact us */
 
-.contact{
-    text-align: center;
-    height: 90%;
+.contact {
+  text-align: center;
+  height: 90%;
 }
 
-.contact h2{
-    font-weight: 900;
-    padding: 1rem;
-    letter-spacing: 0.3rem;
+.contact h2 {
+  font-weight: 900;
+  padding: 1rem;
+  letter-spacing: 0.3rem;
 }
-.contact p{
-    line-height: 2rem;
+.contact p {
+  line-height: 2rem;
 }
-.contact a{    
-    font-weight: 900;
-    text-shadow: 5px 5px 10px #072227;
+.contact a {
+  font-weight: 900;
+  text-shadow: 5px 5px 10px #072227;
 }
 
-@media screen and (max-width:760px){
-    img{
-        display: block;
-    }
-}
-@media screen and (min-width:761px){
-    .img{
+@media screen and (min-width: 761px) {
+  .img {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    }
+  }
 }
 
-.img img{
-    width: 100%;
-    height: auto;
+.img img {
+  width: 100%;
+  height: auto;
 }
